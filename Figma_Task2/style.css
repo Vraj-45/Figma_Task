@@ -1,0 +1,773 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Volkhov;
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            background: radial-gradient(circle at 85% 20%, #fff1da 0%, #ffffff 80%);
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .navbar {
+            padding: 20px 0;
+            background: transparent;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: 600px;
+            color: #181E4B !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #212832 !important;
+            font-weight: 600;
+            margin: 0 15px;
+        }
+
+        .btn-signup {
+            font-weight: 600px;
+            border: 1px solid #212832;
+            color: #212832;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .hero-content {
+            padding: 70px 0;
+        }
+
+        .hero-badge {
+            color: #DF6951;
+            background-color: white;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-size: 84px;
+            font-weight: 700;
+            color: #181E4B;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            color: #5E6282;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .btn-primary-custom {
+            background: #F1A501;
+            border: none;
+            padding: 18px 30px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-right: 30px;
+        }
+
+        .btn-play {
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            color: #686B78;
+            display: flex;
+            align-items: center;
+        }
+
+        .play-icon {
+            width: 52px;
+            height: 52px;
+            background: #DF6951;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .traveler-img {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .plane-decoration {
+            position: absolute;
+            top: -30px;
+            right: 350px;
+            z-index: 3;
+        }
+
+        .plane-decoration2 {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            z-index: 3;
+        }
+
+
+/* Services Section */
+.services-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.section-category {
+    color: #5E6282;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #14183E;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 36px;
+    transition: all 0.3s ease;
+    position: relative;
+    background: white;
+}
+
+.service-card:hover {
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0 22.3363px 17.869px rgba(0, 0, 0, 0.0417275);
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 92px;
+    height: 78px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E1D4C;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #5E6282;
+    line-height: 1.6;
+}
+
+/* Best Flights Card Hover Effect */
+.best-flights-card {
+    position: relative;
+    /* Removed overflow: hidden to allow decoration to show outside */
+}
+
+.best-flights-card .hover-decoration {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    background: #DF6951;
+    border-radius: 15px 15px 0 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1; /* Keep behind the card content */
+}
+
+.best-flights-card:hover .hover-decoration {
+    opacity: 1;
+}
+
+.best-flights-card:hover {
+    background: white;
+}
+
+.best-flights-card:hover .service-title {
+    color: #1E1D4C;
+}
+
+.best-flights-card:hover .service-description {
+    color: #5E6282;
+}
+
+
+
+        /* Destinations Section */
+        .destinations-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .destination-card {
+            height: 100%;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .destination-img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .destination-content {
+            padding: 25px;
+        }
+
+        .destination-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .destination-name {
+            font-size: 18px;
+            font-weight: 500;
+            color: #5E6282;
+        }
+
+        .destination-price {
+            font-size: 16px;
+            font-weight: 500;
+            color: #5E6282;
+        }
+
+        .destination-duration {
+            display: flex;
+            align-items: center;
+            color: #5E6282;
+            font-size: 16px;
+        }
+
+        .destination-duration i {
+            margin-right: 10px;
+            color: #080809;
+        }
+
+        /* Booking Steps Section */
+        .booking-section {
+            margin-left: 275px;
+            padding: 100px 0;
+            background: white;
+        }
+
+        .booking-content {
+            max-width: 500px;
+        }
+
+        .booking-title {
+            font-size: 44px;
+            font-weight: 700;
+            color: #14183E;
+            margin-bottom: 40px;
+            line-height: 1.2;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .step-icon {
+            width: 47px;
+            height: 47px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-1 { background: #F0BB1F; }
+        .step-2 { background: #F15A2B; }
+        .step-3 { background: #006380; }
+
+        .step-content h5 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5E6282;
+            margin-bottom: 5px;
+        }
+
+        .step-content p {
+            font-size: 16px;
+            color: #5E6282;
+            line-height: 1.5;
+        }
+
+        .trip-card {
+    background: white;
+    border-radius: 26px;
+    padding: 25px;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07);
+    position: relative;
+    width: 350px;
+}
+
+.trip-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.trip-date {
+    font-size: 14px;
+    color: #84829A;
+    margin-bottom: 15px;
+}
+
+.trip-icons i {
+    background: #F5F5F5;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #84829A;
+}
+
+.trip-people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ongoing-card {
+    position: absolute;
+    right: -90px;
+    bottom: 40px;
+    background: white;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    width: 200px;
+}
+
+.ongoing-label {
+    font-size: 12px;
+    color: #84829A;
+}
+
+.ongoing-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.ongoing-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.progress-text {
+    font-size: 12px;
+    color: #84829A;
+}
+
+.purple-text {
+    color: #8A79DF;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background: #E5E5E5;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 3px;
+}
+
+.progress-fill {
+    background: #8A79DF;
+    height: 100%;
+    width: 40%;
+    border-radius: 2px;
+}
+
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .testimonials-content {
+            max-width: 500px;
+        }
+
+        .testimonials-category {
+            color: #5E6282;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .testimonials-title {
+            font-size: 50px;
+            font-weight: 700;
+            color: #14183E;
+            margin-bottom: 60px;
+            line-height: 1.2;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07);
+            position: relative;
+        }
+
+        .testimonial-avatar {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: #5E6282;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-author {
+            font-size: 18px;
+            font-weight: 600;
+            color: #5E6282;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-location {
+            font-size: 14px;
+            color: #5E6282;
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .testimonial-chris {
+            font-size: 16px;
+            color: #5E6282;
+            line-height: 1.8;
+            margin-top: 10px;
+            margin-left: 50px;
+            
+        }
+
+        .nav-dots {
+            display: flex;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #E5E5E5;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .nav-dot.active {
+            background: #39425D;
+        }
+
+        .nav-arrows {
+            display: flex;
+        }
+
+        .nav-arrow {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            border: 1px solid #E5E5E5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            cursor: pointer;
+            color: #BCB7C2;
+        }
+
+        .nav-arrow:hover {
+            background: #3C72FC;
+            color: white;
+            border-color: #3C72FC;
+        }
+
+        /* Brands Section */
+        .brands-section {
+            padding: 50px 0;
+            background: white;
+        }
+
+        .brand-logo {
+            max-height: 60px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            opacity: 1;
+        }
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 3rem 0;
+    }
+
+    .newsletter-card {
+    background: #f8f6ff;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    }
+
+    .newsletter-title {
+    font-size: 1.125rem;
+    color: #4f4f70;
+    font-weight: 600;
+    max-width: 550px;
+    margin: 0 auto 1.5rem;
+    }
+
+    /* Input group styling */
+    .newsletter-form .input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    position: relative;
+    }
+
+    .input-icon {
+    position: absolute;
+    left: 14px;
+    }
+
+    .newsletter-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    background: transparent;
+    }
+
+    .newsletter-btn {
+    background: linear-gradient(90deg, #ff946d, #ff7d68);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+
+    .newsletter-btn:hover {
+    background: linear-gradient(90deg, #ff7d68, #ff946d);
+    }
+
+    /* Decorative Circles */
+    .circle-decor {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .circle-decor.left {
+    left: -150px;
+    top: -30px;
+    }
+
+    .circle-decor.right {
+    right: -150px;
+    top: -30px;
+    }
+
+    /* Paper Plane Icon */
+    .paper-plane {
+    position: absolute;
+    top: 12px;  /* moved down so not cut */
+    right: 12px; /* moved left so not cut */
+    background: #5d50c6;
+    border-radius: 50%;
+    padding: 8px;
+    }
+
+        /* Footer */
+        .footer {
+            padding: 80px 0 40px;
+            background: white;
+        }
+
+        .footer-logo {
+            font-size: 44px;
+            font-weight: 500;
+            color: #181E4B;
+            margin-bottom: 20px;
+        }
+
+        .footer-description {
+            color: #5E6282;
+            font-size: 13px;
+            line-height: 1.8;
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+
+        .footer-title {
+            font-size: 21px;
+            font-weight: 700;
+            color: #080809;
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #5E6282;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .social-icons {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            width: 41px;
+            height: 41px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #080809;
+        }
+
+        .app-buttons {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .app-button {
+            margin-right: 10px;
+        }
+
+        .app-button img {
+            height: 35px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: #5E6282;
+            font-size: 14px;
+            border-top: 1px solid #E5E5E5;
+            padding-top: 40px;
+            margin-top: 40px;
+        }
+
+        .decoration-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .plus-decoration {
+            position: absolute;
+            color: #FF7D68;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+        
+
+        .plus-1 { top: 20%; right: 10%; }
+        .plus-2 { top: 60%; left: 5%; }
+        .plus-3 { top: 80%; right: 20%; }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 48px;
+            }
+            .section-title, .testimonials-title {
+                font-size: 32px;
+            }
+            .booking-title {
+                font-size: 28px;
+            }
+        }
